@@ -1,0 +1,24 @@
+
+def check_vacant_seats(train_number, boarding_station, journey_date):
+    # Dummy data for demonstration
+    total_seats = 100  # Total number of seats in the train
+    booked_seats = 50  # Dummy value for booked seats, replace with actual data retrieval
+    
+    # Calculate vacant seats
+    vacant_seats = total_seats - booked_seats
+    
+    return vacant_seats
+
+# Take inputs from the user
+train_number = input("Enter train number: ")
+boarding_station = input("Enter boarding station code: ")
+journey_date = input("Enter journey date (YYYY-MM-DD): ")
+
+# Call the function to check vacant seats
+vacant_seats = check_vacant_seats(train_number, boarding_station, journey_date)
+
+# Display the result
+if vacant_seats > 0:
+    print(f"There are {vacant_seats} vacant seats available.")
+else:
+    print("Sorry, no vacant seats available.")
